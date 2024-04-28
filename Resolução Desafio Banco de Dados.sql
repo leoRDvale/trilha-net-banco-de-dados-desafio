@@ -44,7 +44,7 @@ SELECT Filmes.Nome, Generos.Genero  FROM Filmes, FilmesGenero, Generos WHERE (Fi
 
 SELECT 
      Filmes.Nome,
-	 Generos.Genero
+	Generos.Genero
   FROM
   Filmes
   INNER JOIN FilmesGenero  ON  (Filmes.Id = FilmesGenero.IdFilme)
@@ -55,9 +55,9 @@ SELECT
 
 SELECT 
      Filmes.Nome,
-	 Atores.PrimeiroNome,
-	 Atores.UltimoNome,
-	 ElencoFilme.Papel
+	Atores.PrimeiroNome,
+	Atores.UltimoNome,
+	ElencoFilme.Papel
   FROM
   Filmes
   INNER JOIN ElencoFilme ON  (Filmes.Id = ElencoFilme.IdFilme)
